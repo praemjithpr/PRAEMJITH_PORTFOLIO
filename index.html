@@ -1,51 +1,140 @@
+# index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Internal CSS for page-specific tweak -->
+    <title>Praemjith - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        h1 { color: #ff9800; }
+        /* Internal CSS for Home page specific styles */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            background: white;
+            color: #764ba2;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #f1f1f1;
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        .button-group a {
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Praemjith</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="home-content">
-            <img src="images/ihi.jpg" alt="Profile Picture" style="border: 3px solid #ff9800;">
-            <div>
-                <h1>Welcome to My Portfolio</h1>
-                <p>Hello! I’m <strong>Praemjith P R</strong>, a passionate learner and creator. I specialize in web design and love building beautiful and functional websites using HTML and CSS.</p>
-                <p>I started my journey in technology with a deep interest in how websites work and how users interact with them. This curiosity led me to explore HTML, CSS, and later other web technologies.</p>
-                <p>My portfolio reflects a combination of creativity and technical skills, showcasing projects that are both visually appealing and functionally efficient.</p>
-                <p>Over the years, I’ve participated in hackathons, technical competitions, and collaborative projects that enhanced my problem-solving skills.</p>
-                <p>One of my strongest qualities is adaptability—I enjoy learning new tools and frameworks to keep up with industry trends.</p>
-                <p>Beyond coding, I am also interested in design, focusing on creating clean and user-friendly interfaces.</p>
-                <p>Collaboration is something I value highly, as I believe great ideas often come from teamwork and diverse perspectives.</p>
-                <p>I’m also passionate about personal development and maintaining a positive, growth-oriented mindset.</p>
-                <p>Outside the digital world, I enjoy photography, which helps me develop a good eye for composition and detail.</p>
-                <p>I believe that every project is an opportunity to learn something new and improve my skills.</p>
-                <p>In my future career, I aim to work on projects that make a real difference in people’s lives.</p>
-                <p>This portfolio is a reflection of my dedication to the craft and my vision for building impactful solutions.</p>
-                <p>I’m always open to connecting with like-minded individuals and potential collaborators.</p>
-                <p>Thank you for visiting my portfolio, and I hope you enjoy exploring my work.</p>
+        <section class="hero-section">
+            <img src="images/knio.jpg" alt="Praemjith Profile" class="profile-image">
+            <h1 class="hero-title">PRAEMJITH P R</h1>
+            <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+            <p class="hero-description">
+                Passionate about creating beautiful, functional web experiences that solve real-world problems. 
+                Welcome to my digital portfolio where creativity meets technology. 
+                I strive to design solutions that are both visually engaging and highly efficient. 
+                Every project I work on is driven by innovation and a desire to make a meaningful impact. 
+                Let’s turn ideas into powerful, user-friendly digital realities.
+            </p>
+            <div class="button-group">
+                <a href="projects.html" class="cta-button">View My Work</a>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
             </div>
-        </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <h2>Welcome to My Portfolio</h2>
+                <p>
+                    I'm a dedicated developer with a passion for creating innovative solutions. 
+                    With expertise in modern web technologies and a keen eye for design, 
+                    I bring ideas to life through clean, efficient code and intuitive user experiences.
+                </p>
+                <div class="skills-preview">
+                    <div class="skill-item">
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3, JavaScript, React</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Python, Database Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Other Skills </h3>
+                        <p>Drone Pilot, Problem Solving, Creative Thinking </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        &copy; 2025 My Portfolio
+        <div class="container">
+            <p>&copy; 2025 Praemjith. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/praemjith" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/praemjithpr" class="social-link" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/praem_jith" class="social-link" target="_blank">Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
+
