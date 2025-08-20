@@ -3,40 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact - PRAEMJITH Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Contact page specific styles */
+        .contact-hero {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #333;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Praemjith</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Contact Me</h1>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>Let's discuss your next project or collaboration opportunity</p>
+            </div>
+        </section>
 
-            <label for="phone">Contact Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required pattern="[0-9]{10}"><br><br>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-info">
+                    <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Contact Information</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Email</h3>
+                            <p style="margin: 5px 0 0 0; color: #666;">praemjith2005@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Phone</h3>
+                            <p style="margin: 5px 0 0 0; color: #666;">+91 9042553886</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Location</h3>
+                            <p style="margin: 5px 0 0 0; color: #666;">Nagercoil,Kanyakumari</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">LinkedIn</h3>
+                            <p style="margin: 5px 0 0 0; color: #666;">linkedin.com/in/praemjithpr</p>
+                        </div>
+                    </div>
+                </div>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+                <form class="contact-form" action="#" method="POST">
+                    <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Send Me a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            placeholder="Enter your full name"
+                            minlength="2"
+                        >
+                    </div>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea><br><br>
+                    <div class="form-group">
+                        <label for="contact">Contact Number *</label>
+                        <input 
+                            type="tel" 
+                            id="contact" 
+                            name="contact" 
+                            required 
+                            placeholder="Enter your phone number"
+                            pattern="[0-9+\-\s$$$$]+"
+                            title="Please enter a valid phone number"
+                        >
+                    </div>
 
-            <input type="submit" value="Send Message">
-        </form>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="Enter your email address"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            required 
+                            placeholder="Tell me about your project or how I can help you..."
+                            minlength="10"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div style="text-align: center; margin-top: 40px; padding: 30px; background: #f8f9fa; border-radius: 15px;">
+                    <h3 style="color: #333; margin-bottom: 15px;">Let's Connect!</h3>
+                    <p style="color: #666; margin-bottom: 20px;">
+                        I'm always interested in hearing about new opportunities and exciting projects. 
+                        Whether you're looking for a developer, have a question, or just want to say hello, 
+                        I'd love to hear from you!
+                    </p>
+                    <p style="color: #667eea; font-weight: 600;">
+                        Response time: Usually within 24 hours
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        &copy; 2025 My Portfolio
+        <div class="container">
+            <p>&copy; 2025 Praemjith. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/praemjith" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/praemjithpr" class="social-link" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/praem_jith" class="social-link" target="_blank">Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
+        <
+
